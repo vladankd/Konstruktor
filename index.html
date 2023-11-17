@@ -4,50 +4,70 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Konstruktor</title>
-
-    <link rel="stylesheet" href="./CSS/style.css" />
-    <!-- <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
-    /> -->
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./CSS/style.css" />
   </head>
   <body>
-    <div class="container">
-      <nav class="main_nav">
-        <div class="logo_group">
-          <a href="/">
-            <h1 id="main_heading">Konstruktor</h1>
-            <img
-              src="Assets/Images/Logo/Konstruktor-logos_transparent_gear_only_80x81.png"
-              alt="Logo"
-              class="logo_image"
-            />
-          </a>
+    <div class="container-fluid">
+      <nav class="main_nav navbar navbar-expand-md">
+        <div class="container d-flex flex-column justify-content-center">
+          <div class="logo_group navbar-brand mr-0">
+            <a href="/">
+              <h1 id="main_heading">Konstruktor</h1>
+              <img
+                src="Assets/Images/Logo/Konstruktor-logos_transparent_gear_only_80x81.png"
+                alt="Logo"
+                class="logo_image"
+              />
+            </a>
+          </div>
+          <!-- End logo group -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#nav-list"
+            aria-controls="nav-list"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon navbar-dark ms-auto"></span>
+          </button>
+          <!-- End toggler -->
+          <div class="collapse navbar-collapse" id="nav-list">
+            <ul class="nav_items navbar-nav ms-auto">
+              <li class="nav_item">
+                <a href="#services">Our services</a>
+              </li>
+              <li class="nav_item">
+                <a href="#wwa">Who we are</a>
+              </li>
+              <li class="nav_item">
+                <a href="#contact_us">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <!-- End logo group -->
-        <ul class="nav_items">
-          <li class="nav_item">
-            <a href="#services">Our services</a>
-          </li>
-          <li class="nav_item">
-            <a href="#">Who we are</a>
-          </li>
-          <li class="nav_item">
-            <a href="#">Contact</a>
-          </li>
-        </ul>
       </nav>
+
       <!-- End navigation -->
       <main class="main_content">
-        <section class="hero row">
-          <article class="hero_article column-9">
+        <section class="hero row align-items-center">
+          <article class="hero_article col-lg-8">
             <div class="text">
-              <!-- <h2>
-                Empowering inovation with uniquelly tailored CAD solutions
-              </h2> -->
-              <h2>"Innovative CAD Solutions Tailored to Your Success"</h2>
+              <h2 class="m-5">
+                "Innovative CAD Solutions Tailored to Your Success"
+              </h2>
               <p>
                 We transform concepts into reality with precision 2D and 3D
                 modeling, product prototyping, and architectural drafting. From
@@ -65,15 +85,15 @@
                 through innovative CAD solutions. Join us on the journey to
                 redefine what's possible in the world of design.
               </p>
-              <button class="cta">Contact us!</button>
+              <a class="cta btn" href="#contact_us">Contact us!</a>
             </div>
           </article>
         </section>
         <!-- End of hero section -->
-        <section class="services row" id="services">
-          <h2>Our services</h2>
-          <article class="services_article column-4">
-            <h3>Custom CAD Design</h3>
+        <section class="services row container" id="services">
+          <h2 class="my-5">Our services</h2>
+          <article class="services_article col-lg-4">
+            <h4 class="text-center">Custom CAD Design</h4>
             <div class="service_icon">
               <img
                 src="./Assets/Images/SVG/icons8-cad-64.png"
@@ -88,8 +108,8 @@
               concepts into detailed, accurate designs.
             </div>
           </article>
-          <article class="services_article column-4">
-            <h3>CAD Software Consultation and Support</h3>
+          <article class="services_article col-lg-4">
+            <h4 class="text-center">CAD Software Consultation and Support</h4>
             <div class="service_icon">
               <img
                 src="./Assets/Images/SVG/icons8-cad-64 (1).png"
@@ -102,8 +122,8 @@
               software features, compatibility, and licensing.
             </div>
           </article>
-          <article class="services_article column-4">
-            <h3>CAD Design Review and Feedback Service</h3>
+          <article class="services_article col-lg-4">
+            <h4 class="text-center">Design Review and Feedback Service</h4>
             <div class="service_icon">
               <img
                 src="./Assets/Images/SVG/icons8-cad-64 (2).png"
@@ -118,14 +138,16 @@
           </article>
         </section>
         <!-- End services section -->
-        <section class="wwa row">
-          <h2>Who we are?</h2>
-          <article class="wwa_description column-5">
-            <h4>Here at Konstruktor</h4>
-            We are specialized in creating state-of-the-art CAD solutions. Our
-            team of experts can provide unique design and elegant solutions for
-            any kind of project. We are working hard to provide superb quality
-            of product and prompt delivery.
+        <section class="wwa row container" id="wwa">
+          <h2 class="my-5">Who we are?</h2>
+          <p>
+            <em><b>Here at Konstruktor</b></em> we are specialized in creating
+            state-of-the-art CAD solutions. Our team of experts can provide
+            unique design and elegant solutions for any kind of project. We are
+            working hard to provide superb quality of product and prompt
+            delivery.
+          </p>
+          <article class="wwa_description col-lg-6">
             <h4>Technologies we use</h4>
             <p>
               We mostly work with Solidworks and AutoCAD, but also with CATIA,
@@ -153,24 +175,23 @@
               capabilities.
             </p>
           </article>
-          <article class="wwa_photo column-7">
-            <img
-              src="./Assets/Images/kumpan-electric-kSBWIerVYJs-unsplash-1024x683.jpg"
-              alt=""
-            />
+          <article class="wwa_photo col-lg-6 align-self-center">
+            <img src="./Assets/Images/Hero_image.jpg" alt="" />
           </article>
         </section>
         <!-- End wwho we are section -->
-        <section id="contact" class="contact_section row">
-          <h2>Contact Us</h2>
-          <p>
+        <section id="contact_us" class="contact_section row">
+          <h2 class="my-5">Contact Us</h2>
+          <p class="text-center">
             <em>
               Have questions or want to discuss a project?
               <b>Please reach out to us!</b>
             </em>
           </p>
-          <div class="contact_container">
-            <article class="contact_form column-4">
+          <div
+            class="contact_container container row justify-content-center text-center"
+          >
+            <article class="contact_form col-lg-5 my-5">
               <h4>Send us a message:</h4>
               <form action="submit_form.php" method="post">
                 <div class="form_group">
@@ -194,11 +215,13 @@
                   ></textarea>
                 </div>
 
-                <button type="submit">Submit</button>
+                <button type="submit" class="btn btn-primary contact_btn">
+                  Send message
+                </button>
               </form>
               <!-- Form end -->
             </article>
-            <article class="contact_information column-4">
+            <article class="contact_information col-lg-5 mt-5">
               <div class="business_name">Konstruktor sp. Vladan Babic</div>
               <br />
               <label for="street_address"> <b>Address:</b> </label>
