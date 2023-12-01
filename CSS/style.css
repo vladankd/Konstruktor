@@ -109,10 +109,11 @@ Root styles and resets
   --main-font: Roboto-Regular-webfont;
 
   /* Colors */
-  /* --primary-color: #0196d0; */
-  --primary-color: #1d6fae;
-  /* --secondary-color: #384955; */
-  --secondary-color: #202f39;
+  --primary-color: #0196d0;
+  /* --primary-color: #1d6fae; */
+
+  --secondary-color: #384955;
+  /* --secondary-color: #202f39; */
   /* --ternary-color: #9cadbc; */
   --ternary-color: #838d96;
   /*  Gradient colors
@@ -156,12 +157,10 @@ Elements style
   letter-spacing: 0.1em;
 }
 
-.container {
-  /* max-width: 1480px;
-  margin: 0 auto; */
-}
-
 section {
+  box-shadow: 0px -1px 10px 0px rgba(63, 61, 61, 0.75);
+  -webkit-box-shadow: 0px -1px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px -1px 10px 0px rgba(49, 47, 47, 0.75);
   /* padding: 0.5rem; */
 }
 .main_nav {
@@ -219,12 +218,13 @@ footer {
   padding-top: 1em;
   font-style: italic;
   font-size: 0.75rem;
+  color: var(--link-base-color);
 }
 .main_content {
   padding: 0 0.75em;
 }
 .hero {
-  min-height: 75vh;
+  min-height: 70vh;
   background-image: url(/Assets/Images/greg-rosenke-vdxSOOZucTc-unsplash.jpg);
   background-attachment: fixed;
   background-size: cover;
@@ -232,17 +232,6 @@ footer {
   justify-content: center;
 
   position: relative;
-}
-
-.hero::after {
-  /* content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #38495529; */
 }
 
 .hero_article {
@@ -256,7 +245,7 @@ footer {
 .hero_article .text {
   padding: 1em;
   border-radius: 0.2em;
-  background-color: #384955aa;
+  background-color: #384955e4;
 }
 
 .cta {
@@ -271,8 +260,16 @@ footer {
 section {
   text-align: center;
 }
+
+h4 {
+  font-size: 1.2em;
+}
 .services {
-  color: var(--secondary-color);
+  color: var(--heading-text-color);
+  background-color: var(--secondary-color);
+  opacity: 0.95;
+  min-height: 55vh;
+  margin-top: 0.3em;
 }
 .services_article {
   padding: 0 0.5em 0.5em;
@@ -280,13 +277,15 @@ section {
 }
 
 .service_description {
-  line-height: 1.5;
+  line-height: 1.2;
+  font-size: 1em;
+  text-align: left;
+  color: var(--heading-text-color);
 }
 
-.services_article h3,
-.services_article .service_icon {
+.service_icon {
   text-align: center;
-  margin: 1em 0;
+  margin: 1.5em 0;
 }
 
 .wwa {
@@ -295,9 +294,29 @@ section {
 .wwa_description {
   overflow: auto;
 }
-.wwa h2 {
+h2 {
   text-align: center;
+  font-weight: bold;
 }
+h4 {
+  margin-bottom: 1.25em;
+}
+
+.wwa {
+  background-color: var(--primary-color);
+  color: var(--heading-text-color);
+  opacity: 0.95;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+
+.wwa_description > p {
+  /* background-color: chocolate; */
+  text-align: justify;
+  text-justify: newspaper;
+  margin-bottom: 1.5rem;
+}
+
 .wwa_photo {
   overflow: hidden;
 }
@@ -319,10 +338,6 @@ section {
   flex-wrap: wrap;
   justify-content: space-around; */
   line-height: 1.75;
-}
-
-.form_group {
-  /* background: red; */
 }
 
 .form_group input,
