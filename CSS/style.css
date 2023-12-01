@@ -110,17 +110,23 @@ Root styles and resets
 
   /* Colors */
 <<<<<<< HEAD
+<<<<<<< HEAD
   /* --primary-color: #0196d0; */
   --primary-color: #1d6fae;
   /* --secondary-color: #384955; */
   --secondary-color: #202f39;
 =======
+=======
+>>>>>>> cda81ba (Add minor changes, remvoe empty css rules)
   --primary-color: #0196d0;
   /* --primary-color: #1d6fae; */
 
   --secondary-color: #384955;
   /* --secondary-color: #202f39; */
+<<<<<<< HEAD
 >>>>>>> cda81baef84602ee27a597b0cb3cd8c4c11441e3
+=======
+>>>>>>> cda81ba (Add minor changes, remvoe empty css rules)
   /* --ternary-color: #9cadbc; */
   --ternary-color: #838d96;
   /*  Gradient colors
@@ -165,6 +171,7 @@ Elements style
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .container {
   /* max-width: 1480px;
   margin: 0 auto; */
@@ -172,6 +179,8 @@ Elements style
 
 =======
 >>>>>>> cda81baef84602ee27a597b0cb3cd8c4c11441e3
+=======
+>>>>>>> cda81ba (Add minor changes, remvoe empty css rules)
 section {
   box-shadow: 0px -1px 10px 0px rgba(63, 61, 61, 0.75);
   -webkit-box-shadow: 0px -1px 10px 0px rgba(0, 0, 0, 0.75);
@@ -241,10 +250,14 @@ footer {
 .hero {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   min-height: 65vh;
   background-image: url(../Assets/Images/Hero_image.jpg);
 =======
   min-height: 75vh;
+=======
+  min-height: 70vh;
+>>>>>>> cda81ba (Add minor changes, remvoe empty css rules)
   background-image: url(/Assets/Images/greg-rosenke-vdxSOOZucTc-unsplash.jpg);
 >>>>>>> 47c2a0a (Add bootstrap responsive version)
 =======
@@ -260,6 +273,7 @@ footer {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 .hero::after {
   /* content: "";
   display: block;
@@ -273,6 +287,8 @@ footer {
 
 =======
 >>>>>>> cda81baef84602ee27a597b0cb3cd8c4c11441e3
+=======
+>>>>>>> cda81ba (Add minor changes, remvoe empty css rules)
 .hero_article {
   color: var(--heading-text-color);
   font-size: 0.9em;
@@ -285,10 +301,14 @@ footer {
   padding: 1em;
   border-radius: 0.2em;
 <<<<<<< HEAD
+<<<<<<< HEAD
   background-color: #384955aa;
 =======
   background-color: #384955e4;
 >>>>>>> cda81baef84602ee27a597b0cb3cd8c4c11441e3
+=======
+  background-color: #384955e4;
+>>>>>>> cda81ba (Add minor changes, remvoe empty css rules)
 }
 
 .cta {
@@ -309,6 +329,10 @@ section {
 h4 {
   font-size: 1.2em;
 >>>>>>> cda81baef84602ee27a597b0cb3cd8c4c11441e3
+}
+
+h4 {
+  font-size: 1.2em;
 }
 .services {
   color: var(--heading-text-color);
